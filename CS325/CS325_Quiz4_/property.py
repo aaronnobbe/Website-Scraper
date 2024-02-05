@@ -1,8 +1,8 @@
 class Rock:
     def __init__(self,rock_name,rock_category):
 
-        self.name = rock_name
-        self.category = rock_category
+        self._name = rock_name
+        self._category = rock_category
     @property
     def name(self):
         return self._name

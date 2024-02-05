@@ -5,12 +5,12 @@ class Rock:
         self.category = rock_category
 
     def getname(self):
-        return self._name
+        return self.name
     
     
     def getcategory(self):
-        return self._category
+        return self.category
     
 if __name__ == "__main__":
     rock1 = Rock("quartz", "mineral")
-    print("This is a" , rock1.getname(), "and it's a" , rock1.getcategory())
+    print("This is" , rock1.getname(), "and it's a" , rock1.getcategory())

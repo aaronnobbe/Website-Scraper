@@ -4,11 +4,11 @@ from dataclasses import dataclass
 class Mineral:
     name: str
     color: str
-    hardness: float
+    hardness: float = 0.0
 
-    def desrcribe(self):
+    def describe(self):
         return f"{self.name} is {self.color} and has a hardness of {self.hardness}"
+
 if __name__ == "__main__":
-    mineral1 = Mineral("Amethyst", "purple",5.33)
-    mineral2 = Mineral("Quartz", "clear",6.21)
-    print(mineral1.describe(),mineral2.describe())
+    mineral = Mineral("Quartz", "Colorless", 7.0)
+    print(mineral.describe())
